@@ -1,5 +1,5 @@
 import { ref, watch } from 'vue'
-import { cloneDeep } from 'lodash'
+import { cloneDeep } from 'lodash-es'
 
 export default (canvasDraw: any, jsonObj: any, canvasEleReadonly: any, strokeWidth: any) => {
   const coefficient = ref(1) // 屏幕宽比画布宽

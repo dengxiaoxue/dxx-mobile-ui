@@ -1,4 +1,4 @@
-import { cloneDeep } from 'lodash';
+import { cloneDeep } from 'lodash-es';
 import { isInPolygon, isInCircle, inClipPath, isInX6ImageNode, getBoundingBox, get2PointsDistance, getOCoords, isSameDirection, getPolygonCenterPoint } from './utils'
 
 /**
