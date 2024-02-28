@@ -51,7 +51,7 @@
         <view @click.stop="show4 = false" class="box">canvas 在微信小程序中为原生组件,层级高于前端组件,解决 canvas 层级过高无法覆盖,参考demo-"打开抽屉"的例子</view>
       </das-drawer> -->
     </view>
-    <view>canvas组件更新如下: </view>
+    <view>该组件功能详见type.sfc.ts说明, canvas组件更新如下: </view>
     <view>
       1.支持fromjson的时候就传入$routes进行路线绘制, 数据结构详见mock数据 json3
     </view>
