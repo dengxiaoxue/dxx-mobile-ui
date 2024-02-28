@@ -47,6 +47,9 @@ dependencies:
   '@dcloudio/uni-quickapp-webview':
     specifier: 3.0.0-3090920231225001
     version: 3.0.0-3090920231225001(postcss@8.4.35)(vue@3.4.19)
+  lodash:
+    specifier: ^4.17.21
+    version: 4.17.21
   vue:
     specifier: ^3.4.19
     version: 3.4.19(typescript@4.9.5)
@@ -70,6 +73,9 @@ devDependencies:
   '@dcloudio/vite-plugin-uni':
     specifier: 3.0.0-3090920231225001
     version: 3.0.0-3090920231225001(postcss@8.4.35)(vite@4.0.3)(vue@3.4.19)
+  '@types/lodash':
+    specifier: ^4.14.202
+    version: 4.14.202
   '@vue/runtime-core':
     specifier: ^3.4.19
     version: 3.4.19
@@ -82,12 +88,15 @@ devDependencies:
   prettier:
     specifier: ^3.2.5
     version: 3.2.5
+  sass:
+    specifier: ^1.71.1
+    version: 1.71.1
   typescript:
     specifier: ^4.9.4
     version: 4.9.5
   vite:
     specifier: 4.0.3
-    version: 4.0.3(terser@5.27.2)
+    version: 4.0.3(sass@1.71.1)(terser@5.27.2)
   vue-tsc:
     specifier: ^1.0.24
     version: 1.8.27(typescript@4.9.5)
@@ -1855,7 +1864,7 @@ packages:
       picocolors: 1.0.0
       terser: 5.27.2
       unplugin-auto-import: 0.16.7
-      vite: 4.0.3(terser@5.27.2)
+      vite: 4.0.3(sass@1.71.1)(terser@5.27.2)
     transitivePeerDependencies:
       - '@nuxt/kit'
       - '@vueuse/core'
@@ -3040,6 +3049,10 @@ packages:
       '@types/istanbul-lib-report': 3.0.3
     dev: true
 
+  /@types/lodash@4.14.202:
+    resolution: {integrity: sha512-OvlIYQK9tNneDlS0VN54LLd5uiPCBOp7gS5Z0f1mjoJYBrtStzgmJBxONW3U6OZqdtNzZPmn9BS/7WI7BFFcFQ==}
+    dev: true
+
   /@types/node@20.11.20:
     resolution: {integrity: sha512-7/rR21OS+fq8IyHTgtLkDK949uzsa6n8BkziAKtPVpugIkO6D+/ooXMvzXxDnZrmtXVfjb1bKQafYpb8s89LOg==}
     dependencies:
@@ -3079,7 +3092,7 @@ packages:
       regenerator-runtime: 0.13.11
       systemjs: 6.14.3
       terser: 5.27.2
-      vite: 4.0.3(terser@5.27.2)
+      vite: 4.0.3(sass@1.71.1)(terser@5.27.2)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3094,7 +3107,7 @@ packages:
       '@babel/core': 7.23.9
       '@babel/plugin-transform-typescript': 7.23.6(@babel/core@7.23.9)
       '@vue/babel-plugin-jsx': 1.2.1(@babel/core@7.23.9)
-      vite: 4.0.3(terser@5.27.2)
+      vite: 4.0.3(sass@1.71.1)(terser@5.27.2)
       vue: 3.4.19(typescript@4.9.5)
     transitivePeerDependencies:
       - supports-color
@@ -3107,7 +3120,7 @@ packages:
       vite: ^4.0.0 || ^5.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.0.3(terser@5.27.2)
+      vite: 4.0.3(sass@1.71.1)(terser@5.27.2)
       vue: 3.4.19(typescript@4.9.5)
 
   /@volar/language-core@1.11.1:
@@ -4521,6 +4534,9 @@ packages:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
     dev: false
 
+  /immutable@4.3.5:
+    resolution: {integrity: sha512-8eabxkth9gZatlwl5TBuJnCsoTADlL6ftEr7A4qgdaTsPyreilDSnUk57SO+jfKcNtxPa22U5KK6DSeAYhpBJw==}
+
   /import-local@3.1.0:
     resolution: {integrity: sha512-ASB07uLtnDs1o6EHjKpX34BKYDSqnFerfTOJL2HvMqF70LnxpjkzDB8J44oT9pu4AMPkQwf8jl6szgvNd2tRIg==}
     engines: {node: '>=8'}
@@ -5296,7 +5312,6 @@ packages:
 
   /lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-    dev: true
 
   /lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
@@ -5975,6 +5990,15 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: true
 
+  /sass@1.71.1:
+    resolution: {integrity: sha512-wovtnV2PxzteLlfNzbgm1tFXPLoZILYAMJtvoXXkD7/+1uP41eKkIt1ypWq5/q2uT94qHjXehEYfmjKOvjL9sg==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+    dependencies:
+      chokidar: 3.6.0
+      immutable: 4.3.5
+      source-map-js: 1.0.2
+
   /sax@1.3.0:
     resolution: {integrity: sha512-0s+oAmw9zLl1V1cS9BtZN7JAd0cW5e0QH4W3LWEK6a4LaLEA2OTpGYWDY+6XasBLtz6wkm3u1xRw95mRuJ59WA==}
     dev: false
@@ -6466,7 +6490,7 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /vite@4.0.3(terser@5.27.2):
+  /vite@4.0.3(sass@1.71.1)(terser@5.27.2):
     resolution: {integrity: sha512-HvuNv1RdE7deIfQb8mPk51UKjqptO/4RXZ5yXSAvurd5xOckwS/gg8h9Tky3uSbnjYTgUm0hVCet1cyhKd73ZA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -6495,6 +6519,7 @@ packages:
       postcss: 8.4.35
       resolve: 1.22.8
       rollup: 3.29.4
+      sass: 1.71.1
       terser: 5.27.2
     optionalDependencies:
       fsevents: 2.3.3

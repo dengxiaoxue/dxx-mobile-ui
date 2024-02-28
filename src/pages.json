@@ -5,6 +5,15 @@
 			"style": {
 				"navigationBarTitleText": "uni-app"
 			}
+		},
+		{
+			"path": "uni_modules/dxx-mobile-ui/components/d-button/d-button"
+		},
+		{
+			"path": "uni_modules/dxx-mobile-ui/components/d-test/d-test"
+		},
+		{
+			"path": "uni_modules/dxx-mobile-ui/components/d-canvas/demos/demo1"
 		}
 	],
 	"globalStyle": {
