@@ -4,7 +4,7 @@
   "private": false,
   "type": "module",
   "displayName": "dxx-mobile-ui",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "dxx-mobile-ui",
   "keywords": [
     "dxx-mobile-ui"
@@ -82,9 +82,7 @@
     }
   },
   "dependencies": {
-    "lodash": "^4.17.21"
-  },
-  "devDependencies": {
+    "lodash": "^4.17.21",
     "@types/lodash": "^4.14.202"
   }
 }
